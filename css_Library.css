@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* A elements for Nav */
+a.a_nav {
+    text-decoration: none;
+    color: white;
+}
+/* Nav background color and spacing */
+.nav {
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+/* Nav items, i.e. home buttons, profile buttons, about buttons, etc... */
+.nav_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-left: 20px;
+    gap: 10px;
+}
+/* A border I used on the .btn class*/
+.button {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+/* Actual button */
+.btn {
+    color: white;
+    background-color: rgb(98, 151, 197);
+    padding: 2px 10px 2px 10px;
+    font-size: 20px;
+}
+/* A list made to be flat instead of up and down */
+.nav_list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin-left: 20px;
+}
+/* row might not actually do anything... */
+.row {
+    display: flex;
+}
+/* col-1 takes up 1 flex */
+
+.col-1,
+.col-2,
+.col-3 {
+    margin: 10px;
+    padding: 10px;
+    background-color: cadetblue;
+    flex: 1;
+    border: solid black;
+}
+/* Takes up 2 flex */
+.col-2 {
+    flex: 2;
+}
+/* Takes up 3 flex */
+.col-3 {
+    flex: 3;
+}
