@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 /* A elements for Nav */
 a.a_nav {
     text-decoration: none;
@@ -15,6 +16,16 @@ a.a_nav {
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+.navbar_bottom {
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
 }
 /* Nav items, i.e. home buttons, profile buttons, about buttons, etc... */
 .nav_items {
@@ -70,7 +81,7 @@ a.a_nav {
 }
 /* The main part of the container with a top. Adjust height and width to change size, and change margin to to change where it is.*/
 /* with margin 0 auto it is currently centered in whatever container it is in */
-.container-with-top{
+.container-with-top {
     background-color: lightblue;
     height: 300px;
     width: 800px;
@@ -79,15 +90,75 @@ a.a_nav {
 }
 /* The top part of the container. Could possibly turn this into a nav bar. */
 /* Currently set to 20% of the height of the container with top */
-.container-top{
+.container-top {
     background-color: darkcyan;
     height: 20%;
 }
 /* Where you put the contents. */
 /* Currently set to 90% of the container */
 /* Set to the center of the container with "margin: 0 auto" */
-.container-contents{
+.container-contents {
     background-color: silver;
     width: 90%;
     margin: 0 auto;
 }
+
+
+/* COOKIE POP UP!!!!!!!!!!!!!! */
+/* The popup cookie - hidden by default */
+#cookie-popup {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    border: solid black;
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+}
+
+/* Add styles to the cookie container */
+.cookie-container {
+    min-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Set a style for the close button */
+.cookie-container .close_button {
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    background-color: red;
+}
+/* Class to make elements hidden */
+.hidden {
+    display: none;
+}
+.black{
+    color: black;
+}
+
+/* The alert message box */
+#hidden_alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    display: none;
+}
+
+/* The close button */
+.x_btn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* END OFCOOKIE POP UP!!!!!!!!!!!!!! */
