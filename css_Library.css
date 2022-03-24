@@ -68,3 +68,26 @@ a.a_nav {
 .col-3 {
     flex: 3;
 }
+/* The main part of the container with a top. Adjust height and width to change size, and change margin to to change where it is.*/
+/* with margin 0 auto it is currently centered in whatever container it is in */
+.container-with-top{
+    background-color: lightblue;
+    height: 300px;
+    width: 800px;
+    margin: 0 auto;
+    border: solid black;
+}
+/* The top part of the container. Could possibly turn this into a nav bar. */
+/* Currently set to 20% of the height of the container with top */
+.container-top{
+    background-color: darkcyan;
+    height: 20%;
+}
+/* Where you put the contents. */
+/* Currently set to 90% of the container */
+/* Set to the center of the container with "margin: 0 auto" */
+.container-contents{
+    background-color: silver;
+    width: 90%;
+    margin: 0 auto;
+}
