@@ -79,7 +79,7 @@ a.a_nav {
 /* The main part of the container with a top. Adjust height and width to change size, and change margin to to change where it is.*/
 /* with margin 0 auto it is currently centered in whatever container it is in */
 /* ^ I was wrong this just centers the stuff inside this container */
-.container-with-top {
+.container {
     background-color: lightblue;
     height: 300px;
     width: 800px;
