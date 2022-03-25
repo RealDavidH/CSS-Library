@@ -52,7 +52,6 @@ a.a_nav {
 /* row might not actually do anything... */
 .row {
     display: flex;
-    flex-direction: column;
 }
 
 /* col-1 takes up 1 flex */
@@ -172,6 +171,11 @@ function closeCookie() {
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
+}
+
+/* How much the web page blurs while this cookie pop up is open */
+.blur{
+    filter: blur(8px);
 }
 /* END OF COOKIE POP UP!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */

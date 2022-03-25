@@ -3,12 +3,15 @@
 //!!!!!!COOKIE POP UP FUNCTION!!!!!!
         //New popup code
         function closeCookie() {
-            let checkbox = document.getElementById("cookie_check_Box")
-            let alert2 = document.getElementById("hidden_alert")
+            let main = document.querySelector("#main");
+            let checkbox = document.getElementById("cookie_check_Box");
+            let alert2 = document.getElementById("hidden_alert");
             if (checkbox.checked == true) {
                 document.getElementById("cookie-popup").style.display = "none";
+                main.classList.remove("blur");
             } else {
-                alert('YOU MUST SELL US YOUR SOUL')
+                // alert("YOU MUST AGREE TO GIVE US YOUR SOUL!")
+                alert2.style.display = "block";
             }
         }
 
