@@ -113,33 +113,35 @@ function closeCookie() {
                 alert.style.display = "block";
             }
         } */
+
 /* The popup cookie - hidden by default */
 #cookie-popup {
     display: block;
     position: fixed;
     bottom: 0;
     border: solid black;
-    background-color: black;
-    color: whitesmoke;
     width: 100%;
 }
 
 /* cookie container, where you add the script */
 .cookie-container {
-    min-width: 300px;
     padding: 10px;
     background-color: white;
 }
 
 /* Set a style for the close button */
-.cookie-container .close_button {
+.close_button {
     color: white;
-    padding: 16px 20px;
+    padding: 16px;
     border: none;
     width: 100%;
-    margin-bottom: 10px;
     opacity: 0.8;
     background-color: red;
+    margin-bottom: 10px;
+}
+.close_button:hover{
+    background-color: rgb(199, 0, 0);
+    cursor: pointer;
 }
 
 /* Class to make elements hidden */
@@ -159,18 +161,6 @@ function closeCookie() {
     color: white;
     margin-bottom: 15px;
     display: none;
-}
-
-/* The close button */
-.x_btn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
 }
 
 /* How much the web page blurs while this cookie pop up is open */
