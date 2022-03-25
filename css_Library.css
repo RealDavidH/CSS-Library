@@ -9,6 +9,7 @@ a.a_nav {
     text-decoration: none;
     color: white;
 }
+
 /* Nav background color and spacing */
 .nav {
     background-color: black;
@@ -18,6 +19,7 @@ a.a_nav {
     justify-content: space-around;
 }
 
+/* Nav bar on the bottom of the page */
 .navbar_bottom {
     background-color: black;
     color: whitesmoke;
@@ -27,6 +29,7 @@ a.a_nav {
     position: fixed;
     bottom: 0;
 }
+
 /* Nav items, i.e. home buttons, profile buttons, about buttons, etc... */
 .nav_items {
     display: flex;
@@ -36,19 +39,8 @@ a.a_nav {
     margin-left: 20px;
     gap: 10px;
 }
-/* A border I used on the .btn class*/
-.button {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-/* Actual button */
-.btn {
-    color: white;
-    background-color: rgb(98, 151, 197);
-    padding: 2px 10px 2px 10px;
-    font-size: 20px;
-}
+
+
 /* A list made to be flat instead of up and down */
 .nav_list {
     display: flex;
@@ -56,12 +48,14 @@ a.a_nav {
     gap: 20px;
     margin-left: 20px;
 }
+
 /* row might not actually do anything... */
 .row {
     display: flex;
+    flex-direction: column;
 }
-/* col-1 takes up 1 flex */
 
+/* col-1 takes up 1 flex */
 .col-1,
 .col-2,
 .col-3 {
@@ -71,16 +65,20 @@ a.a_nav {
     flex: 1;
     border: solid black;
 }
+
 /* Takes up 2 flex */
 .col-2 {
     flex: 2;
 }
+
 /* Takes up 3 flex */
 .col-3 {
     flex: 3;
 }
+
 /* The main part of the container with a top. Adjust height and width to change size, and change margin to to change where it is.*/
 /* with margin 0 auto it is currently centered in whatever container it is in */
+/* ^ I was wrong this just centers the stuff inside this container */
 .container-with-top {
     background-color: lightblue;
     height: 300px;
@@ -88,12 +86,14 @@ a.a_nav {
     margin: 0 auto;
     border: solid black;
 }
+
 /* The top part of the container. Could possibly turn this into a nav bar. */
 /* Currently set to 20% of the height of the container with top */
 .container-top {
     background-color: darkcyan;
     height: 20%;
 }
+
 /* Where you put the contents. */
 /* Currently set to 90% of the container */
 /* Set to the center of the container with "margin: 0 auto" */
@@ -102,7 +102,6 @@ a.a_nav {
     width: 90%;
     margin: 0 auto;
 }
-
 
 /* COOKIE POP UP!!!!!!!!!!!!!! */
 /* The popup cookie - hidden by default */
@@ -133,10 +132,13 @@ a.a_nav {
     opacity: 0.8;
     background-color: red;
 }
+
 /* Class to make elements hidden */
 .hidden {
     display: none;
 }
+
+/* Sets the color of something to black */
 .black{
     color: black;
 }
@@ -144,7 +146,7 @@ a.a_nav {
 /* The alert message box */
 #hidden_alert {
     padding: 20px;
-    background-color: #f44336; /* Red */
+    background-color: red; 
     color: white;
     margin-bottom: 15px;
     display: none;
@@ -161,4 +163,91 @@ a.a_nav {
     cursor: pointer;
     transition: 0.3s;
 }
-/* END OFCOOKIE POP UP!!!!!!!!!!!!!! */
+/* END OF COOKIE POP UP!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* Makes text size 20px */
+.text-20px{
+    font-size: 20px;
+}
+
+/* Makes text size 40px */
+.text-40px {
+    font-size: 40px;
+    }
+
+/* add margin top to a class */
+.mar-top-20{
+    margin-top: 20px;
+}
+
+/* Add margin left to a class */
+.mar-left-20{
+    margin-left: 20px;
+}
+
+/* Add margin right to a class */
+.mar-right-20{
+    margin-right: 20px;
+}
+
+/* Add margin bottom to a class */
+.mar-bottom-20{
+    margin-bottom: 20px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!! */
+/* Bucha buttons */
+
+/* The first button which everything was based on */
+.btn {
+    color: white;
+    background-color: rgb(98, 151, 197);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px 2px 15px;
+    text-shadow: 5px black;
+    border: solid black;
+}
+
+/* Green Button */
+.btn_green{
+    color: black;
+    background-color: #5af158;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px 2px 15px;
+    box-shadow: 20px black;
+    text-shadow: 20px black;
+    border: solid black;
+}
+
+/* Yellow Button */
+.btn_Yellow{
+    color: black;
+    background-color: #FFAE42;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px 2px 15px;
+    box-shadow: 20px black;
+    text-shadow: 20px black;
+    border: solid black;
+}
+
+/* What .btn does on hover */
+.btn:hover{
+    background-color: rgb(85, 133, 175);
+}
+
+/* What yellow button does on hover */
+.btn_Yellow:hover{
+    background-color: #e49a39;
+}
+
+/* What green button does on hover */
+.btn_green:hover{
+    background-color: #42b440;
+}
