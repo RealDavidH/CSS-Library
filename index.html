@@ -86,10 +86,13 @@
             <label for="cookie_check_Box" class="black">* Agree to our cookie settings:</label>
             <input type="checkbox" id="cookie_check_Box"> <!-- onclick="checkBox()" Uncomment this to make it work-->
             <button type="button" class="close_button" onclick="closeCookie()">Close</button>
-            <div id="hidden_alert">
+            
+            <!-- Before I learned how to use 'alert function'  -->
+            <!-- <div id="hidden_alert">
                 <span class="x_btn" onclick="this.parentElement.style.display='none';"></span>
                 You must agree to give us your soul
-            </div>
+            </div> -->
+
         </div>
     </div>
 
@@ -116,36 +119,7 @@
         </div>
     </div>
 
-    <script>
-        // When the user clicks on div, open the popup
-        // older code
-        // function open() {
-        //   document.getElementById("myForm").style.display = "block";
-        // }
-        // function close() {
-        //   document.getElementById("myForm").style.display = "none";
-        // }
-        //New popup code
-        function closeCookie() {
-            let checkbox = document.getElementById("cookie_check_Box")
-            let alert = document.getElementById("hidden_alert")
-            if (checkbox.checked == true) {
-                document.getElementById("cookie-popup").style.display = "none";
-            } else {
-                alert.style.display = "block";
-            }
-        }
-    //      If you want a text to display when you check the check mark. Make this function not a comment and the html on line 87
-    //     function checkBox() {
-    //         let checkBox = document.getElementById("cookie_check_Box");
-    //         let text = document.getElementById("text");
-    //         if (checkBox.checked == true) {
-    //             text.style.display = "block";
-    //         } else {
-    //             text.style.display = "none";
-    //         }
-    //     }
-    // </script>
+    <script src="js_Library.js"></script>
 
 </body>
 

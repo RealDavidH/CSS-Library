@@ -104,6 +104,16 @@ a.a_nav {
 }
 
 /* COOKIE POP UP!!!!!!!!!!!!!! */
+/* THIS IS THE SCRIPT 
+function closeCookie() {
+            let checkbox = document.getElementById("cookie_check_Box")
+            let alert = document.getElementById("hidden_alert")
+            if (checkbox.checked == true) {
+                document.getElementById("cookie-popup").style.display = "none";
+            } else {
+                alert.style.display = "block";
+            }
+        } */
 /* The popup cookie - hidden by default */
 #cookie-popup {
     display: block;
@@ -115,7 +125,7 @@ a.a_nav {
     width: 100%;
 }
 
-/* Add styles to the cookie container */
+/* cookie container, where you add the script */
 .cookie-container {
     min-width: 300px;
     padding: 10px;
