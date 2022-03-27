@@ -1,4 +1,4 @@
 # CSS-Library
-My css library.
+My css/js library
 
 Honestly it starting to just look like an off brand boot strap library...
