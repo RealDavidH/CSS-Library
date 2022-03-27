@@ -243,7 +243,15 @@ function closeCookie() {
     padding: 40px
 }
 
+/* Makes color of div white */
+.white{
+    color: white;
+}
 
+/* Using this to change color of div's on press of night mode button */
+.night{
+    background-color:#333333;
+}
 
 /* !!!!!!!!!!!!!!!!!!!!!! */
 /* Bucha buttons */

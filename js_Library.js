@@ -67,3 +67,39 @@ function login() {
         btn_Normal.value = "Log out";
     } else btn_Normal.value = "Login";
 }
+
+//Dark mode button
+//!!!REQUIRES BOOTSTRAP ICONS TO FUNCTION!!! 
+let container = document.querySelector(".container")
+let body = document.querySelector("body");
+let moon = document.querySelector(".btn_moon");
+let notDark = false; //keeps track of if night mode is on or not
+
+function dark(){
+    if (notDark){
+        //Changes container and body to include class night.
+        container.classList.add("night"); //doesn't work on container because it has a background color already
+        body.classList.add("night");
+        //removing the first moon icon
+        moon.classList.remove("bi");
+        moon.classList.remove("bi-moon");
+        //adding a white background and adding new moon icon 
+        moon.classList.add("white")
+        moon.classList.add("bi-moon-fill");
+        moon.classList.add("bi");
+        notDark = false;
+
+    } else{
+        //removes class night from container and body.
+        container.classList.remove("night"); //doesn't work on container because it has a background color already
+        body.classList.remove("night");
+        moon.classList.remove("bi");
+        //removing second moon icon and removing class white to make it a black icon
+        moon.classList.remove("bi-moon-fill");
+        moon.classList.remove("white")
+        //adding OG Icon back
+        moon.classList.add("bi-moon");
+        moon.classList.add("bi");
+        notDark = true;
+    }
+} 
