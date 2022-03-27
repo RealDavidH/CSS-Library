@@ -33,3 +33,37 @@ function closeCookie() {
 //         }
 //     }
 //!!!!!!COOKIE POP UP FUNCTION!!!!!!
+
+//!!!!!! Button even lister, that when you click on button the number of likes goes up by 1.!!!!!!!!!!!!!!!!
+let btn_Yellow = document.querySelector(".btn_Yellow");
+function addEvent() {
+    btn_Yellow.addEventListener("click", changeLike());
+}
+
+let like = 0;
+function changeLike() {
+    like++; // makes the buttons number value go up by one, every time this function is run
+    alert("You have liked this!"); //Alerts user that the have clicked the like button
+    btn_Yellow.value = "likes: " + like;
+}
+
+// If you for some reason, like me, have two yellow buttons you use two of these functions like so
+// let btn_Yellow2 = document.querySelector(".btn_Yellow2");
+// function addEvent2(){
+//     btn_Yellow2.addEventListener("click", changeLike2());
+// }
+
+// let like2 = 0;
+//     function changeLike2(){
+//         like++;
+//             btn_Yellow2.value = "likes: "+like;
+// }
+//!!!!!! Button event lister!!!!!!!!!
+
+//Changes a button from login to logout
+let btn_Normal = document.querySelector(".btn");
+function login() {
+    if (btn_Normal.value == "Login") {
+        btn_Normal.value = "Log out";
+    } else btn_Normal.value = "Login";
+}
