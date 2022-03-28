@@ -73,7 +73,7 @@ function login() {
 let container = document.querySelector(".container")
 let body = document.querySelector("body");
 let moon = document.querySelector(".btn_moon");
-let notDark = false; //keeps track of if night mode is on or not
+let notDark = true; //keeps track of if night mode is on or not
 
 function dark(){
     if (notDark){
