@@ -2,11 +2,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Amatic SC", cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#main {
+ul{
+    list-style: none;
 }
-
 /* A elements for Nav */
 a.a_nav {
     text-decoration: none;
@@ -17,6 +17,13 @@ h2 {
     color: white;
 }
 
+.bar{
+    width: 100px;
+    height: 5px;
+    background-color: silver;
+    border-radius: 10px;
+}
+
 /* If you want a header with flex in it */
 header {
     display: flex;
@@ -25,14 +32,19 @@ header {
 
 /* Nav background color and spacing */
 .nav {
-    background-color: black;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 89%,
+        rgba(134, 0, 228, 1) 89%
+    );
     color: whitesmoke;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     padding: 20px;
     margin-bottom: 20px;
 }
-
 /* Nav bar on the bottom of the page */
 .navbar_bottom {
     background-color: black;
@@ -49,22 +61,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 20px;
-    gap: 10px;
+    padding: 10px;
 }
 
 /* A list made to be flat instead of up and down */
 .nav_list {
     display: flex;
     list-style: none;
-    gap: 20px;
+    justify-content: space-around;
     align-items: center;
 }
 
 /* right */
 .right {
     display: flex;
-    flex-direction: column;
 }
 
 /* left */
@@ -72,13 +82,12 @@ header {
     flex-direction: column;
 }
 
-
 .flex_colum {
     display: flex;
     flex-direction: column;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
@@ -88,26 +97,44 @@ header {
 }
 
 .gear {
-    height: 20px;
-    width: 20px;
+    padding: 0 20%;
 }
-
 /* row might not actually do anything... */
 .row {
     display: flex;
     flex-direction: row;
 }
 
-.flex_end{
+.flex_end {
     display: flex;
     justify-content: flex-end;
 }
 
-.alg-middle{
+.flex_start{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.alg-middle {
     align-items: center;
 }
 
-.middle{
+.around{
+    display: flex;
+    justify-content:space-around;
+}
+
+.evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle {
     justify-content: center;
     align-items: center;
 }
@@ -136,26 +163,39 @@ header {
     display: flex;
     padding: 0 20%;
 }
-.container {
+
+.user_container {
     border: solid silver;
 }
-.user_container{
-    border: solid silver;
-}
-.user_image{
+.user_image {
     width: 80px;
     height: 80px;
     top: 20px;
-    position:absolute;
+    position: absolute;
     background-color: white;
     padding: 5px;
     border-radius: 50%;
     border: silver solid;
 }
-.friend_img{
+.search_img {
+    width: 40px;
+    height: 40px;
+}
+.img_shoppingcart {
+    transform: scaleX(-1);
+    width: 40px;
+    height: 40px;
+}
+.img_flip {
+    transform: scaleX(-1);
+}
+.img_gamepic{
+    height: 150px;
+    width: 300px;
+}
+.icon{
     width: 30px;
     height: 30px;
-    border-radius: 50%;
 }
 /* The top part of the container. Could possibly turn this into a nav bar. */
 /* Currently set to 20% of the height of the container with top */
@@ -163,28 +203,34 @@ header {
     background-color: #333333;
     height: 20%;
 }
-.container-small{
-    border: solid silver
+.container-small {
+    border: solid silver;
 }
-.container-top-small{
+.container-top-small {
     background-color: #333333;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
 }
-.user-top{
+.user-top {
     display: block;
     background-color: lightblue;
     height: 60px;
     position: relative;
 }
+.container_game{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 1200px;
+}
 /* Where you put the contents. */
 /* Currently set to 90% of the container */
 /* Set to the center of the container with "margin: 0 auto" */
-.container-contents {
+.container-contents{
     display: flex;
-    margin: 0 auto;
+    flex-direction: column;
 }
 
 /* COOKIE POP UP!!!!!!!!!!!!!! */
@@ -256,15 +302,30 @@ function closeCookie() {
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .border {
-    border: solid black 1px;
+    border: solid black 3px;
+}
+.border_temp {
+    border: dotted red;
+}
+.border-left {
+    border: solid black;
+}
+.border-none {
+    border: none;
 }
 
 /* add text size to a class*/
-.text-10px {
+.text-10 {
     font-size: 10px;
+}
+.text-15 {
+    font-size: 15px;
 }
 .text-20 {
     font-size: 20px;
+}
+.text-25 {
+    font-size: 25px;
 }
 .text-30 {
     font-size: 30px;
@@ -279,8 +340,15 @@ function closeCookie() {
     font-size: 80px;
 }
 
+/* add underline to text */
+.underline {
+    text-decoration: underline;
+}
+.line_through{
+    text-decoration: line-through;
+}
 /* add margin top to a class */
-.mar-top-10{
+.mar-top-10 {
     margin-top: 10px;
 }
 .mar-top-20 {
@@ -297,19 +365,26 @@ function closeCookie() {
 }
 
 /* Add margin left to a class */
-.mar-left-5{
+.mar-left-5 {
     margin-left: 5px;
 }
 .mar-left-20 {
     margin-left: 20px;
 }
-
+.mar-left-40 {
+    margin-left: 40px;
+}
 /* Add margin right to a class */
 .mar-right-20 {
     margin-right: 20px;
 }
-
+.mar-right-40 {
+    margin-right: 40px;
+}
 /* Add margin bottom to a class */
+.mar-bottom-10 {
+    margin-bottom: 10px;
+}
 .mar-bottom-20 {
     margin-bottom: 20px;
 }
@@ -324,43 +399,78 @@ function closeCookie() {
     width: 30%;
 }
 
-/* add padding 10px to a class */
+/* add gap to a class */
+.gap-10{
+    gap: 10px;
+}
+.gap-20{
+    gap: 20px;
+}
+
+/* add padding to a class */
 .padding-10 {
     padding: 10px;
 }
-
-/* add padding 20px to a class */
 .padding-20 {
     padding: 20px;
 }
-
-/* add padding 30px to a class */
 .padding-30 {
     padding: 30px;
 }
-
-/* add padding 40px to a class*/
 .padding-40 {
     padding: 40px;
 }
-.padding-top-10{
+/* add padding top to a class */
+.padding-top-10 {
     padding-top: 10px;
 }
 
+/* add padding bottom to a class */
+.padding-bottom-40 {
+    padding-bottom: 40px;
+}
+
+/* add padding left to a class */
+.padding-left-40 {
+    padding-left: 40px;
+}
+/* add padding right to a class */
+.padding-right-40 {
+    padding-right: 40px;
+}
 /* Makes color of div */
 .white {
     color: white;
 }
-
-.grey{
+.silver{
+    color: silver;
+}
+.grey {
     color: grey;
+}
+
+.dojo_purple {
+    color: #8600e4;
 }
 
 /* Using this to change color of div's on press of night mode button */
 .night {
     background-color: #333333;
 }
+/* Changes background color */
+.background_white {
+    background-color: white;
+}
+.background_dojopurple {
+    background-color: #8600e4;
+}
 
+.currency_dropdown {
+    color: black;
+    font-size: 20px;
+    border: solid black;
+    padding: 5px;
+}
 /* !!!!!!!!!!!!!!!!!!!!!! */
 /* Bucha buttons */
 
@@ -376,20 +486,43 @@ function closeCookie() {
     border: solid black;
 }
 
-.btn_accept{
+.eight {
     border-radius: 50%;
     height: 30px;
     width: 30px;
     border: none;
 }
 
-.btn_decline{
+.btn_arrow {
+    background-color: white;
+    border: none;
+}
+
+.btn_icon{
+    background-color: white;
+    border: none;
+}
+
+.btn_arrow:hover {
+    background-color: rgb(163, 162, 162);
+    border: none;
+}
+
+.btn_accept {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 5px solid black;
+}
+
+.btn_decline {
     border-radius: 50%;
     height: 30px;
     width: 30px;
     border: none;
 }
-.btn_round{
+
+.btn_round {
     color: black;
     background-color: silver;
     border-radius: 50%;
@@ -398,16 +531,14 @@ function closeCookie() {
 }
 
 /* Green Button */
-.btn_green {
-    color: black;
-    background-color: #5af158;
+.btn_buy {
+    color: white;
+    background-color: limegreen;
     font-size: 20px;
     display: flex;
     align-items: center;
-    padding: 2px 15px 2px 15px;
-    box-shadow: 20px black;
-    text-shadow: 20px black;
-    border: solid black;
+    padding: 2px 10px ;
+    border: none;
 }
 
 /* Yellow Button */
@@ -434,6 +565,6 @@ function closeCookie() {
 }
 
 /* What green button does on hover */
-.btn_green:hover {
+.btn_buy:hover {
     background-color: #42b440;
 }
