@@ -82,7 +82,7 @@ header {
     flex-direction: column;
 }
 
-.flex_colum {
+.flex_column {
     display: flex;
     flex-direction: column;
 }
@@ -160,8 +160,7 @@ header {
 /* with margin 0 auto it is currently centered in whatever container it is in */
 /* ^ I was wrong this just centers the stuff inside this container */
 .main_container {
-    display: flex;
-    padding: 0 20%;
+    
 }
 
 .user_container {
@@ -202,6 +201,11 @@ header {
 .container-top {
     background-color: #333333;
     height: 20%;
+}
+.container{
+
+    border: solid black;
+    
 }
 .container-small {
     border: solid silver;
@@ -300,7 +304,15 @@ function closeCookie() {
 }
 /* END OF COOKIE POP UP!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
+.border_round_5{
+    border-radius: 5px;
+}
+.border_round_10{
+    border-radius: 10px;
+}
+.border_round_20{
+    border-radius: 20px;
+}
 .border {
     border: solid black 3px;
 }
@@ -408,6 +420,9 @@ function closeCookie() {
 }
 
 /* add padding to a class */
+.padding-5{
+    padding: 5px;
+}
 .padding-10 {
     padding: 10px;
 }
@@ -424,6 +439,10 @@ function closeCookie() {
 .padding-top-10 {
     padding-top: 10px;
 }
+.padding-top-40 {
+    padding-top: 40px;
+}
+
 
 /* add padding bottom to a class */
 .padding-bottom-40 {
@@ -453,6 +472,9 @@ function closeCookie() {
     color: #8600e4;
 }
 
+.yellow{
+    color: yellow;
+}
 /* Using this to change color of div's on press of night mode button */
 .night {
     background-color: #333333;
@@ -463,6 +485,21 @@ function closeCookie() {
 }
 .background_dojopurple {
     background-color: #8600e4;
+}
+.background_green {
+    background-color: green;
+}
+.background_red{
+    background-color: red;
+}
+.background_blue{
+    background-color: blue;
+}
+.background_lightblue{
+    background-color: lightblue;
+}
+.background_yellow{
+    background-color: yellow;
 }
 
 .currency_dropdown {
