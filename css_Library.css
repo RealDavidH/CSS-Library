@@ -138,7 +138,9 @@ header {
     justify-content: center;
     align-items: center;
 }
-
+.overflow_scroll{
+    overflow: auto;
+}
 /* col-1 takes up 1 flex */
 .col-1,
 .col-2,
@@ -160,7 +162,7 @@ header {
 /* with margin 0 auto it is currently centered in whatever container it is in */
 /* ^ I was wrong this just centers the stuff inside this container */
 .main_container {
-    
+    display: flex;
 }
 
 .user_container {
@@ -203,8 +205,7 @@ header {
     height: 20%;
 }
 .container{
-
-    border: solid black;
+    
     
 }
 .container-small {
@@ -314,7 +315,7 @@ function closeCookie() {
     border-radius: 20px;
 }
 .border {
-    border: solid black 3px;
+    border: solid black 2px;
 }
 .border_temp {
     border: dotted red;
@@ -380,6 +381,9 @@ function closeCookie() {
 .mar-left-5 {
     margin-left: 5px;
 }
+.mar-left-10 {
+    margin-left: 10px;
+}
 .mar-left-20 {
     margin-left: 20px;
 }
@@ -409,6 +413,17 @@ function closeCookie() {
 /* add width to a class */
 .width-30 {
     width: 30%;
+}
+/* add height to a class */
+.height-50 {
+    height: 50%;
+}
+.height-50px {
+    min-height: 50px;
+}
+.height-100px {
+    min-height: 100px;
+    max-height: 100px;
 }
 
 /* add gap to a class */
@@ -454,8 +469,14 @@ function closeCookie() {
     padding-left: 40px;
 }
 /* add padding right to a class */
+.padding-right-20{
+    padding-right: 20px;
+}
 .padding-right-40 {
     padding-right: 40px;
+}
+.padding-right-80 {
+    padding-right: 80px;
 }
 /* Makes color of div */
 .white {
@@ -514,7 +535,7 @@ function closeCookie() {
 /* The first button which everything was based on */
 .btn {
     color: white;
-    background-color: rgb(98, 151, 197);
+    background-color: red;
     font-size: 20px;
     display: flex;
     align-items: center;
