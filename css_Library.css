@@ -4,20 +4,27 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-ul{
+
+ul {
     list-style: none;
 }
+
 /* A elements for Nav */
 a.a_nav {
     text-decoration: none;
     color: white;
 }
 
+body {
+    padding: 0 20%;
+}
+
+
 h2 {
     color: white;
 }
 
-.bar{
+.bar {
     width: 100px;
     height: 5px;
     background-color: silver;
@@ -33,11 +40,9 @@ header {
 /* Nav background color and spacing */
 .nav {
     background: rgb(0, 0, 0);
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 1) 89%,
-        rgba(134, 0, 228, 1) 89%
-    );
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 1) 89%,
+            rgba(134, 0, 228, 1) 89%);
     color: whitesmoke;
     display: flex;
     align-items: center;
@@ -45,6 +50,7 @@ header {
     padding: 20px;
     margin-bottom: 20px;
 }
+
 /* Nav bar on the bottom of the page */
 .navbar_bottom {
     background-color: black;
@@ -82,9 +88,18 @@ header {
     flex-direction: column;
 }
 
+.flex_wrap {
+    flex-wrap: wrap;
+}
+
 .flex_column {
     display: flex;
     flex-direction: column;
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
 }
 
 .flex {
@@ -99,6 +114,7 @@ header {
 .gear {
     padding: 0 20%;
 }
+
 /* row might not actually do anything... */
 .row {
     display: flex;
@@ -110,7 +126,7 @@ header {
     justify-content: flex-end;
 }
 
-.flex_start{
+.flex_start {
     display: flex;
     justify-content: flex-start;
 }
@@ -119,17 +135,17 @@ header {
     align-items: center;
 }
 
-.around{
+.around {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-.evenly{
+.evenly {
     display: flex;
     justify-content: space-evenly;
 }
 
-.between{
+.between {
     display: flex;
     justify-content: space-between;
 }
@@ -138,9 +154,11 @@ header {
     justify-content: center;
     align-items: center;
 }
-.overflow_scroll{
+
+.overflow_scroll {
     overflow: auto;
 }
+
 /* col-1 takes up 1 flex */
 .col-1,
 .col-2,
@@ -163,11 +181,13 @@ header {
 /* ^ I was wrong this just centers the stuff inside this container */
 .main_container {
     display: flex;
+
 }
 
 .user_container {
     border: solid silver;
 }
+
 .user_image {
     width: 80px;
     height: 80px;
@@ -178,39 +198,45 @@ header {
     border-radius: 50%;
     border: silver solid;
 }
+
 .search_img {
     width: 40px;
     height: 40px;
 }
+
 .img_shoppingcart {
     transform: scaleX(-1);
     width: 40px;
     height: 40px;
 }
+
 .img_flip {
     transform: scaleX(-1);
 }
-.img_gamepic{
+
+.img_gamepic {
     height: 150px;
     width: 300px;
 }
-.icon{
+
+.icon {
     width: 30px;
     height: 30px;
 }
+
 /* The top part of the container. Could possibly turn this into a nav bar. */
 /* Currently set to 20% of the height of the container with top */
 .container-top {
     background-color: #333333;
     height: 20%;
 }
-.container{
-    
-    
-}
+
+.container {}
+
 .container-small {
     border: solid silver;
 }
+
 .container-top-small {
     background-color: #333333;
     display: flex;
@@ -218,22 +244,25 @@ header {
     align-items: center;
     padding: 10px;
 }
+
 .user-top {
     display: block;
     background-color: lightblue;
     height: 60px;
     position: relative;
 }
-.container_game{
+
+.container_game {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-width: 1200px;
 }
+
 /* Where you put the contents. */
 /* Currently set to 90% of the container */
 /* Set to the center of the container with "margin: 0 auto" */
-.container-contents{
+.container-contents {
     display: flex;
     flex-direction: column;
 }
@@ -275,6 +304,7 @@ function closeCookie() {
     background-color: red;
     margin-bottom: 10px;
 }
+
 .close_button:hover {
     background-color: rgb(199, 0, 0);
     cursor: pointer;
@@ -303,26 +333,33 @@ function closeCookie() {
 .blur {
     filter: blur(8px);
 }
+
 /* END OF COOKIE POP UP!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.border_round_5{
+.border_round_5 {
     border-radius: 5px;
 }
-.border_round_10{
+
+.border_round_10 {
     border-radius: 10px;
 }
-.border_round_20{
+
+.border_round_20 {
     border-radius: 20px;
 }
+
 .border {
     border: solid black 2px;
 }
+
 .border_temp {
     border: dotted red;
 }
+
 .border-left {
     border: solid black;
 }
+
 .border-none {
     border: none;
 }
@@ -331,24 +368,31 @@ function closeCookie() {
 .text-10 {
     font-size: 10px;
 }
+
 .text-15 {
     font-size: 15px;
 }
+
 .text-20 {
     font-size: 20px;
 }
+
 .text-25 {
     font-size: 25px;
 }
+
 .text-30 {
     font-size: 30px;
 }
+
 .text-40 {
     font-size: 40px;
 }
+
 .text-60 {
     font-size: 60px;
 }
+
 .text-80 {
     font-size: 80px;
 }
@@ -357,22 +401,32 @@ function closeCookie() {
 .underline {
     text-decoration: underline;
 }
-.line_through{
+
+.line_through {
     text-decoration: line-through;
 }
+
 /* add margin top to a class */
+.mar-top-5 {
+    margin-top: 5px;
+}
+
 .mar-top-10 {
     margin-top: 10px;
 }
+
 .mar-top-20 {
     margin-top: 20px;
 }
+
 .mar-top-40 {
     margin-top: 40px;
 }
+
 .mar-top-60 {
     margin-top: 60px;
 }
+
 .mar-top-80 {
     margin-top: 80px;
 }
@@ -381,29 +435,53 @@ function closeCookie() {
 .mar-left-5 {
     margin-left: 5px;
 }
+
 .mar-left-10 {
     margin-left: 10px;
 }
+
 .mar-left-20 {
     margin-left: 20px;
 }
+
 .mar-left-40 {
     margin-left: 40px;
 }
+
 /* Add margin right to a class */
 .mar-right-20 {
     margin-right: 20px;
 }
+
 .mar-right-40 {
     margin-right: 40px;
 }
+
+.mar-right-60 {
+    margin-right: 60px;
+}
+
 /* Add margin bottom to a class */
 .mar-bottom-10 {
     margin-bottom: 10px;
 }
+
 .mar-bottom-20 {
     margin-bottom: 20px;
 }
+
+.mar-bottom-25 {
+    margin-bottom: 25px;
+}
+
+.mar-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.mar-bottom-40 {
+    margin-bottom: 40px;
+}
+
 
 /* add margin to a class */
 .mar {
@@ -414,46 +492,76 @@ function closeCookie() {
 .width-30 {
     width: 30%;
 }
+
+.width-50 {
+    min-width: 30%;
+}
+
+.width-200{
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.width-400 {
+    min-width: 400px;
+    max-width: 400px;
+}
+
 /* add height to a class */
 .height-50 {
     height: 50%;
 }
+
 .height-50px {
     min-height: 50px;
 }
+
 .height-100px {
     min-height: 100px;
     max-height: 100px;
 }
 
+.height-400px {
+    min-height: 400px;
+    max-height: 400px;
+}
+
+
 /* add gap to a class */
-.gap-10{
+.gap-10 {
     gap: 10px;
 }
-.gap-20{
+
+.gap-20 {
     gap: 20px;
 }
 
 /* add padding to a class */
-.padding-5{
+.padding-5 {
     padding: 5px;
 }
+
 .padding-10 {
     padding: 10px;
 }
+
 .padding-20 {
     padding: 20px;
 }
+
 .padding-30 {
     padding: 30px;
 }
+
 .padding-40 {
     padding: 40px;
 }
+
 /* add padding top to a class */
 .padding-top-10 {
     padding-top: 10px;
 }
+
 .padding-top-40 {
     padding-top: 40px;
 }
@@ -468,23 +576,33 @@ function closeCookie() {
 .padding-left-40 {
     padding-left: 40px;
 }
+
 /* add padding right to a class */
-.padding-right-20{
+.padding-right-20 {
     padding-right: 20px;
 }
+
 .padding-right-40 {
     padding-right: 40px;
 }
+
 .padding-right-80 {
     padding-right: 80px;
 }
+
 /* Makes color of div */
 .white {
     color: white;
 }
-.silver{
+
+.yellow2 {
+    color: #CC9F38;
+}
+
+.silver {
     color: silver;
 }
+
 .grey {
     color: grey;
 }
@@ -493,34 +611,54 @@ function closeCookie() {
     color: #8600e4;
 }
 
-.yellow{
-    color: yellow;
+.yellow {
+    color: #EDD998;
 }
+
 /* Using this to change color of div's on press of night mode button */
 .night {
     background-color: #333333;
 }
+
 /* Changes background color */
 .background_white {
     background-color: white;
 }
+
 .background_dojopurple {
     background-color: #8600e4;
 }
+
 .background_green {
     background-color: green;
 }
-.background_red{
+
+.background_red {
     background-color: red;
 }
-.background_blue{
+
+.background_blue {
     background-color: blue;
 }
-.background_lightblue{
+
+.background_lightblue {
     background-color: lightblue;
 }
-.background_yellow{
+
+.background_yellow {
     background-color: yellow;
+}
+
+.background_silver {
+    background-color: #545454;
+}
+
+.background_grey {
+    background-color: gray;
+}
+
+.background_black {
+    background-color: rgb(36, 36, 36);
 }
 
 .currency_dropdown {
@@ -529,15 +667,15 @@ function closeCookie() {
     border: solid black;
     padding: 5px;
 }
+
 /* !!!!!!!!!!!!!!!!!!!!!! */
 /* Bucha buttons */
 
 /* The first button which everything was based on */
 .btn {
-    color: white;
-    background-color: red;
+    color: black;
+    background-color: #902B21;
     font-size: 20px;
-    display: flex;
     align-items: center;
     padding: 2px 15px 2px 15px;
     text-shadow: 5px black;
@@ -556,7 +694,7 @@ function closeCookie() {
     border: none;
 }
 
-.btn_icon{
+.btn_icon {
     background-color: white;
     border: none;
 }
@@ -590,39 +728,239 @@ function closeCookie() {
 
 /* Green Button */
 .btn_buy {
-    color: white;
-    background-color: limegreen;
-    font-size: 20px;
-    display: flex;
+    background-color: #902B21;
+    font-size: 17px;
     align-items: center;
-    padding: 2px 10px ;
-    border: none;
+    padding: 5px 20px;
+    border: solid black 1px;
 }
 
 /* Yellow Button */
 .btn_Yellow {
-    color: black;
-    background-color: #ffae42;
-    font-size: 20px;
+    background-color: #902B21;
     display: flex;
     align-items: center;
     padding: 2px 15px 2px 15px;
     box-shadow: 20px black;
     text-shadow: 20px black;
-    border: solid black;
+    border: solid 1px black;
 }
 
 /* What .btn does on hover */
-.btn:hover {
-    background-color: rgb(85, 133, 175);
+.btn:hover,
+.btn_Yellow:hover,
+.btn_buy:hover {
+    background-color: #631d17;
 }
 
 /* What yellow button does on hover */
-.btn_Yellow:hover {
-    background-color: #e49a39;
-}
+
 
 /* What green button does on hover */
-.btn_buy:hover {
-    background-color: #42b440;
+
+/* from boot strap */
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #212529;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #212529;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
+}
+
+.table> :not(caption)>*>* {
+    padding: 0.5rem 0.5rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+.table>tbody {
+    vertical-align: inherit;
+}
+
+.table>thead {
+    vertical-align: bottom;
+}
+
+.table> :not(:first-child) {
+    border-top: 2px solid currentColor;
+}
+
+.table-sm> :not(caption)>*>* {
+    padding: 0.25rem 0.25rem;
+}
+
+.table-bordered> :not(caption)>* {
+    border-width: 1px 0;
+}
+
+.table-bordered> :not(caption)>*>* {
+    border-width: 0 1px;
+}
+
+.table-borderless> :not(caption)>*>* {
+    border-bottom-width: 0;
+}
+
+.table-borderless> :not(:first-child) {
+    border-top-width: 0;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: var(--bs-table-striped-color);
+}
+
+.table-active {
+    --bs-table-accent-bg: var(--bs-table-active-bg);
+    color: var(--bs-table-active-color);
+}
+
+.table-hover>tbody>tr:hover>* {
+    --bs-table-accent-bg: var(--bs-table-hover-bg);
+    color: var(--bs-table-hover-color);
+}
+
+.table-primary {
+    --bs-table-bg: #cfe2ff;
+    --bs-table-striped-bg: #c5d7f2;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #bacbe6;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #bfd1ec;
+    --bs-table-hover-color: #000;
+    color: #000;
+    border-color: #bacbe6;
+}
+
+.table-secondary {
+    --bs-table-bg: #e2e3e5;
+    --bs-table-striped-bg: #d7d8da;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #cbccce;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #d1d2d4;
+    --bs-table-hover-color: #000;
+    color: #000;
+    border-color: #cbccce;
+}
+
+.table-success {
+    --bs-table-bg: #d1e7dd;
+    --bs-table-striped-bg: #c7dbd2;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #bcd0c7;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #c1d6cc;
+    --bs-table-hover-color: #000;
+    color: #000;
+    border-color: #bcd0c7;
+}
+
+.table-info {
+    --bs-table-bg: #cff4fc;
+    --bs-table-striped-bg: #c5e8ef;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #badce3;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #bfe2e9;
+    --bs-table-hover-color: #000;
+    color: #000;
+    border-color: #badce3;
+}
+
+.table-warning {
+    --bs-table-bg: #fff3cd;
+    --bs-table-striped-bg: #f2e7c3;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #e6dbb9;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #ece1be;
+    --bs-table-hover-color: #000;
+    color: #000;
+    border-color: #e6dbb9;
+}
+
+.table-danger {
+    --bs-table-bg: #f8d7da;
+    --bs-table-striped-bg: #eccccf;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #dfc2c4;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #e5c7ca;
+    --bs-table-hover-color: #000;
+    color: #000;
+    border-color: #dfc2c4;
+}
+
+.table-light {
+    --bs-table-bg: #f8f9fa;
+    --bs-table-striped-bg: #ecedee;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #dfe0e1;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #e5e6e7;
+    --bs-table-hover-color: #000;
+    color: #000;
+    border-color: #dfe0e1;
+}
+
+.table-dark {
+    --bs-table-bg: #212529;
+    --bs-table-striped-bg: #2c3034;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: #373b3e;
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #323539;
+    --bs-table-hover-color: #fff;
+    color: #fff;
+    border-color: #373b3e;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 575.98px) {
+    .table-responsive-sm {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .table-responsive-md {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .table-responsive-lg {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .table-responsive-xl {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@media (max-width: 1399.98px) {
+    .table-responsive-xxl {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 }
